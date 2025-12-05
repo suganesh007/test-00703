@@ -85,47 +85,41 @@
 
 
     
-    <script>
-window.$zoho = window.$zoho || {};
-$zoho.salesiq = $zoho.salesiq || { ready:function(){} };
-</script>
 
-<script 
-    id="zsiqscript" 
-    src="https://salesiq.zohopublic.in/widget?wc=siqd548a4cd0b203851ef9172816b559550ad1441bf2610c43d8e486581680bac5a" 
-    defer>
+
+<script>
+    window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}
+</script>
+<script id="zsiqscript" src="https://salesiq.zohopublic.in/widget?wc=siqd548a4cd0b203851ef9172816b559550ad1441bf2610c43d8e486581680bac5a" defer>
+    
 </script>
 
 <script>
-$zoho.salesiq.ready(function() {
+$zoho.salesiq.ready = function () {
     $zoho.salesiq.set("home.widgets", [
         {
-            "type"  : "announcement",
-            
-            "banner": {  
-                "type": "video",
-                "thumbnail": "https://zoho.com/images/bot.png",
-                "url": "https://zoho.com/videos/bots.mp4",
-                "autoplay": true,
-                "subtitles": "https://zoho.com/videos/bots.srt"
+            type: "announcement",
+            banner: {
+                type: "image",
+                url: "https://previewengine-accl.zohoexternal.com/image/WD/gkbu53ba12feb59204d558ba0e4440c52d3f1?version=1.0&width=2046&height=1536",
+                image_position: "fit|fill"
             },
-
-            "title" : "🚀 Welcome to our website!",
-            "text"  : "Check out our latest updates and new features.",
-
-            "action": {
-                "type": "open_url",
-                "text": "Learn More",
-                "url" : "https://www.zoho.com/salesiq/help/developer-guides/bot-siq-scripts-zobot-response-cta-2.0.html"
+            title: "Lead Nurturing 101: Free Training",
+            text: "All Zoho users in the region are welcome to join the meetup! Zoho One subscribers will gain the most insights. Zoho CRM and other stand-alone app users will discover how Zoho’s full suite can boost their business success.",
+            action: {
+                type: "link",
+                label: "Register Now",
+                url: "https://www.zoho.com/zoholics/"
             }
         }
     ]);
-});
+};
 </script>
 
     
 </body>
 
 </html>
+
 
 
