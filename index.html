@@ -85,43 +85,47 @@
 
 
     
-    <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script>
-    <script 
-        id="zsiqscript" 
-        src="https://salesiq.zohopublic.in/widget?wc=siqd548a4cd0b203851ef9172816b559550ad1441bf2610c43d8e486581680bac5a" defer>
-    </script>
+    <script>
+window.$zoho = window.$zoho || {};
+$zoho.salesiq = $zoho.salesiq || { ready:function(){} };
+</script>
+
+<script 
+    id="zsiqscript" 
+    src="https://salesiq.zohopublic.in/widget?wc=siqd548a4cd0b203851ef9172816b559550ad1441bf2610c43d8e486581680bac5a" 
+    defer>
+</script>
 
 <script>
-    // SalesIQ installation code
 $zoho.salesiq.ready(function() {
     $zoho.salesiq.set("home.widgets", [
         {
-"type"   : "announcement",
+            "type"  : "announcement",
             
-"banner" : {  
-   "type":"video",
-   "thumbnail":"https://zoho.com/images/bot.png",
-   "url": "https://zoho.com/videos/bots.mp4",
-   "autoplay" : true,
-   "subtitles": "https://zoho.com/videos/bots.srt"
-}
-            ,
-"title"  : "🚀 Welcome to our website!",
-"text"   : "Check out our latest updates and new features.",
-            
-"action" : {
-"type" : "link",
-"label" : "Learn More", // Text to be shown
-"url" : "https://www.zoho.com/salesiq/help/developer-guides/bot-siq-scripts-zobot-response-cta-2.0.html"
-    
-}
-            
-}  
-     ]);
-})
+            "banner": {  
+                "type": "video",
+                "thumbnail": "https://zoho.com/images/bot.png",
+                "url": "https://zoho.com/videos/bots.mp4",
+                "autoplay": true,
+                "subtitles": "https://zoho.com/videos/bots.srt"
+            },
+
+            "title" : "🚀 Welcome to our website!",
+            "text"  : "Check out our latest updates and new features.",
+
+            "action": {
+                "type": "open_url",
+                "text": "Learn More",
+                "url" : "https://www.zoho.com/salesiq/help/developer-guides/bot-siq-scripts-zobot-response-cta-2.0.html"
+            }
+        }
+    ]);
+});
 </script>
+
     
 </body>
 
 </html>
+
 
